@@ -18,4 +18,12 @@ pub fn data_type () {
     let y: usize = 0;
 
     println!("{} {}", x, y);
+
+    // 부동 소수점 타입
+
+    // 타입 선언을 해주지 않으면 기본적으로 f64 로 할당됨.
+    let x = 2.25;
+    let y: f32 = 32.12;
+
+    println!("{} {}", x, y);
 }
