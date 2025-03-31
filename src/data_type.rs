@@ -26,4 +26,22 @@ pub fn data_type () {
     let y: f32 = 32.12;
 
     println!("{} {}", x, y);
+
+    // 문자형 타입
+
+    // 작은 따옴표에 표시하면 char 타입임.
+    // Rust의 char타입은 Unicode Scalar를 표현하는 값임
+    // ASCII 보다 더 많은 값 표현 가능
+    let x = 'z';
+    let y: char = 'ℤ';
+    let heart_eyed_cat = '😻';
+
+    println!("{} {} {}", x, y, heart_eyed_cat);
+
+    // 큰 따옴표로 표시하면 &str 타입임.
+    // 문자열 표현 가능
+    let x = "Hello";
+    let y: &str = "Heart Eyed Cat 😻";
+
+    println!("{} {}", x, y);
 }
