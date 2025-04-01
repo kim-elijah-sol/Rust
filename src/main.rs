@@ -4,6 +4,9 @@ mod pattern_matching;
 
 fn main() {
     pattern_matching::pattern_matching();
+    println!("{}", pattern_matching::angle((0.0,-1.5)));
+    println!("{}", pattern_matching::angle((0.0,2.0)));
+    println!("{}", pattern_matching::angle((1.0,2.0)));
     println!();
     data_type::data_type();
     println!();
