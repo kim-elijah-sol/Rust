@@ -2,8 +2,11 @@ mod let_const;
 mod data_type;
 mod pattern_matching;
 mod struct_data;
+mod tuple_data;
 
 fn main() {
+    tuple_data::tuple_data();
+    println!();
     struct_data::struct_data();
     println!();
     pattern_matching::pattern_matching();
