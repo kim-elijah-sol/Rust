@@ -3,8 +3,11 @@ mod data_type;
 mod pattern_matching;
 mod struct_data;
 mod tuple_data;
+mod enum_data;
 
 fn main() {
+    enum_data::enum_data();
+    println!();
     tuple_data::tuple_data();
     println!();
     struct_data::struct_data();
