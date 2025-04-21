@@ -11,4 +11,12 @@ pub fn ownership (){
     // 대여자와 피대여자 모두 사용 가능
     println!("{}", ib1);
     println!("{}", ib2);
+    
+    let mut mb1: String = String::from("hello");
+    let mb2: &mut String = &mut mb1; // mb1을 가변 대여 ( Mutable Borrowing )
+
+    mb2.push_str(", world!"); // mb2를 통해 mb1을 변경
+
+    println!("{}", mb2); // 정상 출력
+    // println!("{}", mb1); // 오류! mb1은 더 이상 사용할 수 없음
 }
