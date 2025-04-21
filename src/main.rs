@@ -4,8 +4,11 @@ mod pattern_matching;
 mod struct_data;
 mod tuple_data;
 mod enum_data;
+mod ownership;
 
 fn main() {
+    ownership::ownership();
+    println!();
     enum_data::enum_data();
     println!();
     tuple_data::tuple_data();
