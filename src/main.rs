@@ -5,8 +5,11 @@ mod struct_data;
 mod tuple_data;
 mod enum_data;
 mod ownership;
+mod life_time;
 
 fn main() {
+    println!("{}", life_time::longest("xyx", "abcd"));
+    println!();
     ownership::ownership();
     println!();
     enum_data::enum_data();
